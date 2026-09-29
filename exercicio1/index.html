@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Intensivo Front-End 07</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Intensivo de Front-end 07</h1>
+        <p>Interfaces Web consumindo APIs</p>
+    </header>
+
+    <main>
+
+        <!-- EXERCÍCIO 1 -->
+        <section class="card">
+
+            <h2>1. Buscar dados de uma API</h2>
+
+            <p>
+                Busque informações de um Pokémon utilizando uma API pública.
+            </p>
+
+            <button onclick="buscarPokemon()">
+                Buscar Pokémon
+            </button>
+
+            <div id="pokemon"></div>
+
+        </section>
+
+
+        <!-- EXERCÍCIO 2 -->
+        <section class="card">
+
+            <h2>2. Campo de busca</h2>
+
+            <p>
+                Pesquise um Pokémon pelo nome utilizando a API.
+            </p>
+
+            <div class="busca">
+
+                <input
+                    type="text"
+                    id="nomePokemon"
+                    placeholder="Digite o nome do Pokémon"
+                >
+
+                <button onclick="pesquisarPokemon()">
+                    Buscar
+                </button>
+
+            </div>
+
+            <div id="resultadoPesquisa"></div>
+
+        </section>
+
+
+        <!-- EXERCÍCIO 3 -->
+        <section class="card">
+
+            <h2>3. Login com API</h2>
+
+            <p>
+                Faça login utilizando uma API fictícia.
+            </p>
+
+            <input
+                type="text"
+                id="usuario"
+                placeholder="Usuário"
+            >
+
+            <input
+                type="password"
+                id="senha"
+                placeholder="Senha"
+            >
+
+            <button onclick="fazerLogin()">
+                Entrar
+            </button>
+
+            <p id="mensagemLogin"></p>
+
+        </section>
+
+
+        <!-- EXERCÍCIO 4 -->
+        <section class="card">
+
+            <h2>4. Lista de usuários</h2>
+
+            <p>
+                Usuários carregados através de uma API JSON.
+            </p>
+
+            <button onclick="carregarUsuarios()">
+                Carregar usuários
+            </button>
+
+            <div id="listaUsuarios"></div>
+
+        </section>
+
+
+        <!-- EXERCÍCIO 5 -->
+        <section class="card">
+
+            <h2>5. Previsão do tempo</h2>
+
+            <p>
+                Veja o clima de acordo com a localização do dispositivo.
+            </p>
+
+            <button onclick="buscarClima()">
+                Ver meu clima
+            </button>
+
+            <div id="clima"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Intensivo de Front-end 07</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

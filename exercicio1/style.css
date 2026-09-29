@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(135deg, #6c5ce7, #4834d4);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* CARDS */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px #0002;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    color: #4834d4;
+}
+
+.card p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+
+/* INPUTS */
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+/* BUSCA */
+
+.busca {
+    display: flex;
+    gap: 10px;
+}
+
+.busca input {
+    margin-bottom: 0;
+}
+
+
+/* BOTÕES */
+
+button {
+    border: none;
+
+    background-color: #4834d4;
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #3526a8;
+}
+
+
+/* RESULTADOS */
+
+#pokemon,
+#resultadoPesquisa,
+#mensagemLogin,
+#listaUsuarios,
+#clima {
+    margin-top: 20px;
+}
+
+
+/* POKÉMON */
+
+#pokemon,
+#resultadoPesquisa {
+    text-align: center;
+}
+
+#pokemon img,
+#resultadoPesquisa img {
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+}
+
+
+/* USUÁRIOS */
+
+.usuario {
+    background-color: #f5f5ff;
+
+    padding: 15px;
+
+    margin-top: 12px;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #4834d4;
+}
+
+.usuario h3 {
+    margin-bottom: 7px;
+}
+
+
+/* LOGIN */
+
+#mensagemLogin {
+    font-weight: bold;
+}
+
+
+/* CLIMA */
+
+.clima-box {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.clima-box h3 {
+    margin-bottom: 10px;
+}
+
+.clima-box p {
+    margin-bottom: 5px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .busca {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+}
